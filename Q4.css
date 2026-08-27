@@ -1,0 +1,63 @@
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 700px;
+}
+.profile-card {
+    width: 350px;
+    padding: 30px;
+
+    background-color: white;
+
+    text-align: center;
+
+    border: 2px solid #333;
+    border-radius: 15px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.student-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #3498db;
+    margin-bottom: 20px;
+}
+.profile-card h1 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-style: normal;
+    text-transform: uppercase;
+    text-decoration: underline;
+
+    color: #1d3557;
+
+    text-shadow: 2px 2px 4px #aaa;
+
+    margin-bottom: 10px;
+}
+.profile-card h3 {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 600;
+    text-decoration: underline dashed;
+    text-transform: capitalize;
+    color: #e67e22;
+    margin-bottom: 15px;
+}
+.profile-card p {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: normal;
+    text-transform: none;
+    color: #555;
+    text-shadow: 1px 1px 2px #ddd;
+    margin-bottom: 20px;
+}

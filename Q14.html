@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .hero {
+            height: 100vh;
+
+            background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
+            background-size: cover;
+            background-position: center;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            color: white;
+            text-align: center;
+        }
+
+        .content {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 30px;
+            border-radius: 10px;
+            width: 70%;
+        }
+
+        h1 {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.5;
+        }
+        @media (orientation: portrait) {
+
+            .hero {
+                background-image: url("https://wallpapercave.com/wp/wp10399843.jpg");
+
+                justify-content: center;
+            }
+            .content {
+                width: 75%;
+                text-align: center;
+            }
+            h1 {
+                font-size: 35px;
+            }
+            p {
+                font-size: 17px;
+            }
+        }
+        @media (orientation: landscape) {
+
+            .hero {
+                background-image: url("https://wallpaperaccess.com/full/9409729.jpg");
+
+                justify-content: flex-start;
+            }
+            .content {
+                width: 45%;
+                text-align: left;
+                margin-left: 60px;
+            }
+            h1 {
+                font-size: 50px;
+            }
+            p {
+                font-size: 20px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+
+        <div class="content">
+
+            <h1>Explore Konkan</h1>
+
+            <p>
+               Explore the beautiful Konkan region, famous for its pristine beaches,
+                 lush green hills, scenic waterfalls, historic forts, rich culture,
+                        and delicious coastal cuisine.
+            </p>
+
+        </div>
+
+    </section>
+
+</body>
+</html>

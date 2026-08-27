@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <style>
+        body {
+            margin: 0;
+            background-color: #f5f5f5;
+            color: #222;
+        }
+
+        nav{
+            background-color: black;
+            padding:20px;
+            display:flex;
+            justify-content: space-evenly;
+        }
+     a{
+            color:white;
+            text-decoration: none;
+        }
+        .container {
+            padding: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 40px;
+            text-decoration: underline;
+        }
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 220px;
+            padding: 25px;
+
+            background-color: rgb(154, 202, 245);
+            color: #333;
+
+            border-radius: 10px;
+
+            box-shadow: 0 4px 10px #bbb;
+        }
+
+        .card h2 {
+            color: #8b4513;
+            text-decoration: underline dashed;
+        }
+        @media (prefers-color-scheme: dark) {
+
+            body {
+                background-color: #121212;
+                color: #eeeeee;
+            }
+            nav {
+                background-color: #1e1e1e;
+                box-shadow: 0 2px 5px #000;
+            }
+
+            nav a {
+                color: #ffffff;
+            }
+            .card {
+                background-color: #242424;
+                color: #dddddd;
+                box-shadow: 0 4px 10px #000;
+            }
+            .card h2 {
+                color: #ffb74d;
+            }
+
+            h1 {
+                color: #ffffff;
+            }
+        }
+    </style>
+</head>
+<body>
+   <nav>
+   <a href="">Home</a> 
+   <a href="">About Us</a>
+   <a href="">Contact Us</a>
+   <a href="">Register</a>
+   <a href="">Login</a>
+   </nav>
+    <div class="container">
+
+        <h1> Cafe Delight</h1>
+
+        <p>
+            Welcome to Cafe Delight! Enjoy delicious food,
+            freshly brewed coffee and a relaxing atmosphere.
+        </p>
+        <div class="cards">
+
+            <div class="card">
+                <h2>Coffee</h2>
+                <p>
+                    Freshly brewed coffee made from
+                    premium quality beans.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>Desserts</h2>
+                <p>
+                    Delicious cakes, pastries and
+                    sweet treats for everyone.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>Snacks</h2>
+                <p>
+                    Fresh sandwiches, burgers and
+                    tasty snacks.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

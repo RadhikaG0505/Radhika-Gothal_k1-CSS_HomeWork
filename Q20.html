@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <style>
+
+        body {
+            margin: 0;
+        }
+        nav {
+            background-color: #4b2e24;
+            padding: 18px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffd6a5;
+        }
+        .hero {
+            height: 550px;
+            background-image: url("https://static.vecteezy.com/system/resources/thumbnails/038/995/141/small_2x/ai-generated-modern-coffee-shop-with-elegant-wooden-chairs-and-floral-decorations-generated-by-ai-free-photo.jpg");
+            background-size: cover;
+            background-position: center;
+
+            position: relative;
+
+            color: white;
+            text-align: center;
+            padding-top: 120px;
+        }
+
+        .hero h1 {
+            font-family: Georgia, serif;
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 650px;
+            margin: auto;
+            line-height: 1.6;
+        }
+        .btn {
+            position: absolute;
+            bottom: 70px;
+            left: 50%;
+            transform: translateX(-50%);
+
+            background-color: #d2691e;
+            color: white;
+            padding: 14px 28px;
+            border: none;
+            border-radius: 6px;
+
+            font-size: 17px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #a94f16;
+        }
+        @media (max-width: 600px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .hero {
+                height: 500px;
+                background-image: url("https://static.vecteezy.com/system/resources/thumbnails/026/428/626/small_2x/photography-of-outdoor-cafe-in-daylight-with-smooth-lighting-ai-generated-free-photo.jpg");
+                padding: 80px 20px;
+            }
+
+            .hero h1 {
+                font-size: 35px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .btn {
+                bottom: 50px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+    </nav>
+    <section class="hero">
+
+        <h1>Welcome to CafeEat</h1>
+
+        <p>
+            Enjoy freshly brewed coffee, delicious snacks and a
+            relaxing atmosphere. Your perfect place to sip, relax and enjoy!
+        </p>
+
+        <button class="btn">Explore Our Menu</button>
+
+    </section>
+
+</body>
+</html>

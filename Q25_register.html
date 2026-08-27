@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(
+                120deg,
+                #addef7,
+                #c8b2f1,
+                #edacc7,
+                #b1dff7
+            );
+
+            background-size: 300% 300%;
+            animation: backgroundMove 8s infinite alternate;
+        }
+        .register-box {
+            width: 380px;
+            padding: 30px;
+            background-color: #dfbdfa;
+            border: 2px solid #af6bd6;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px #454545;
+            transition: 0.5s;
+        }
+        .register-box:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 15px 30px #555;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1769aa;
+            font-family: Georgia, serif;
+            text-decoration: underline;
+            margin-bottom: 25px;
+        }
+        .form-group {
+            margin-bottom: 18px;
+            padding: 10px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+        .form-group label::before {
+            content: "➜ ";
+            color: #1769aa;
+        }
+        .form-group:nth-child(odd) {
+            background-color: #a0d6f8;
+        }
+
+        .form-group:nth-child(even) {
+            background-color: #efa2f2;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 7px;
+            color: #333;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        input {
+            width: 100%;
+            padding: 11px;
+            border: 1px solid #888;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: 0.4s;
+        }
+
+        input:hover {
+            border-color: #1769aa;
+            transform: scale(1.02);
+        }
+
+        input:focus {
+            outline: none;
+            border: 2px solid #1769aa;
+            background-color: #e8f6ff;
+            transform: translateX(5px);
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 7px;
+            background-color: #1976d2;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            transition: 0.4s;
+        }
+        button:hover {
+            background-color: #0d47a1;
+            transform: scale(1.05) skew(-2deg);
+        }
+        @keyframes backgroundMove {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+
+        }
+        @media (max-width: 500px) {
+            .register-box {
+                width: 90%;
+                padding: 20px;
+            }
+            h1 {
+                font-size: 25px;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="register-box">
+        <h1>Register!</h1>
+        <form  action="Q25_login.html">
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" placeholder="Enter your name">
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" placeholder="Enter your email">
+            </div>
+
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" placeholder="Enter password">
+            </div>
+
+            <div class="form-group">
+                <label>Phone</label>
+                <input type="tel" placeholder="Enter phone number">
+            </div>
+
+            <button type="submit">Register</button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>

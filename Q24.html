@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CafeEat Company</title>
+
+    <style>
+        body {
+            background-color: #f7e5d0;
+            color: #12344d;
+        }
+        nav {
+            background-color: #000000;
+            padding: 18px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+        .logo {
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .nav-links {
+            display: flex;
+            gap: 70px;
+
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .hero {
+            height: 330px;
+            background-image:
+                url("https://static.vecteezy.com/system/resources/previews/056/163/857/non_2x/modern-cafe-interior-design-featuring-yellow-and-grey-furniture-plants-and-large-windows-photo.jpg");
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-content {
+            background-color: rgba(244, 193, 152, 0.88);
+            padding: 30px 50px;
+            text-align: center;
+            border-radius: 10px;
+            max-width: 750px;
+        }
+
+        .hero-content h1 {
+            color: #814b15;
+            font-size: 38px;
+            margin-bottom: 12px;
+            text-decoration: underline;
+        }
+
+        .hero-content p {
+            font-size: 17px;
+            font-style: italic;
+            color: #000000;
+        }
+        .about {
+            background-color: #f3d8ba;
+            margin: 20px;
+            padding: 30px;
+            border: 1px solid #ffd39e;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .about h2 {
+            text-decoration: underline;
+            margin-bottom: 15px;
+            color: #814b15;
+        }
+
+        .about p {
+            font-size: 16px;
+            color: #000000;
+        }
+        .services {
+            padding: 25px 40px 50px;
+        }
+
+        .services h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #8a5e12;
+            text-decoration: underline;
+        }
+
+        .service-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .card {
+            background-color: #fbd8b3;
+            border: 1px solid #fbdeaf;
+            border-radius: 8px;
+            padding: 25px;
+            text-align: center;
+            flex: 1;
+
+            box-shadow: 0 4px 10px rgba(0, 60, 100, 0.15);
+        }
+
+        .card h3 {
+            color: #8a5e12;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            line-height: 1.5;
+            font-size: 15px;
+        }
+        @media (max-width: 800px) {
+
+            nav {
+                flex-direction: column;
+                gap: 18px;
+                text-align: center;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                gap: 12px;
+                width: 100%;
+            }
+
+            .hero-content {
+                margin: 20px;
+                padding: 25px;
+            }
+
+            .hero-content h1 {
+                font-size: 30px;
+            }
+
+            .service-container {
+                flex-direction: column;
+            }
+
+            .card {
+                width: 100%;
+            }
+        }
+        @media (max-width: 500px) {
+
+            nav {
+                padding: 15px;
+            }
+
+            .logo {
+                font-size: 22px;
+            }
+
+            .hero {
+                height: 280px;
+            }
+
+            .hero-content {
+                padding: 20px;
+            }
+
+            .hero-content h1 {
+                font-size: 25px;
+            }
+
+            .hero-content p {
+                font-size: 14px;
+            }
+
+            .about {
+                margin: 12px;
+                padding: 20px;
+            }
+
+            .services {
+                padding: 20px 15px;
+            }
+
+            .order-btn {
+                position: static;
+                margin-top: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">CafeEat</div>
+
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="hero">
+
+        <div class="hero-content">
+            <h1>Welcome to CafeEat</h1>
+
+            <p>
+                Enjoy freshly prepared food, delicious coffee and a
+                comfortable atmosphere perfect for friends and family.
+            </p>
+        </div>
+    </section>
+    <section class="about">
+        <h2>About CafeEat</h2>
+        <p>
+            CafeEat is a cozy café where great taste meets a relaxing
+            atmosphere. We serve freshly brewed coffee, delicious snacks,
+            desserts and meals prepared with quality ingredients.
+            Our goal is to make every visit enjoyable and memorable.
+        </p>
+    </section>
+
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-container">
+            <div class="card">
+                <h3>Fresh Coffee</h3>
+                <p>
+                    Enjoy freshly brewed coffee prepared from carefully
+                    selected beans and served hot.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Delicious Food</h3>
+                <p>
+                    Choose from a variety of tasty snacks, meals and
+                    desserts prepared fresh every day.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Quick Delivery</h3>
+                <p>
+                    Order your favorite CafeEat dishes and enjoy convenient
+                    delivery right to your doorstep.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+</html>

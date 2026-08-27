@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-color: #d8f0f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            perspective: 800px;
+        }
+        .card {
+            width: 320px;
+            height: 320px;
+            background-color: #deb1f0;
+            border-radius: 18px;
+            padding: 25px;
+            box-sizing: border-box;
+            text-align: center;
+            box-shadow: 0 10px 20px #777;
+            transition: transform 1s ease,
+                        background-color 0.5s ease,
+                        box-shadow 0.5s ease;
+        }
+        h1 {
+            color: #69421b;
+            font-size: 30px;
+            text-decoration: underline dashed;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #69421b;
+            font-size: 17px;
+            font-style: italic;
+            line-height: 1.6;
+        }
+        button {
+            margin-top: 20;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            background-color: #c07844;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+        button:hover {
+            transform: scale(1.1);
+            background-color: #1390ce;
+        }
+
+        .card:hover {
+            transform:
+                rotateX(15deg)
+                rotateY(-18deg)
+                rotateZ(3deg)
+                translate(15px, -10px)
+                skew(2deg, 2deg)
+                scale(1.05);
+            background-color: #e6d8f0;
+            box-shadow: 20px 25px 30px #413d3d;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+            <h1>CafeEat</h1>
+            <p>
+                Welcome to CafeEat, a cozy place to enjoy
+                delicious food.
+            </p>
+            <p>
+                Discover our special menu and enjoy
+                a wonderful cafe experience with us.
+            </p>
+            <button>View Menu</button>
+        </div>
+
+    </div>
+
+</body>
+</html>

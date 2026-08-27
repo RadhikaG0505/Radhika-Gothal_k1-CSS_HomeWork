@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CafeEat - About Us</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            background-color: #f5e6d3;
+        }
+        nav {
+            background-color: #4b2412;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .logo img {
+            width: 65px;
+            height: 60px;
+            object-fit: contain;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .about {
+            width: 80%;
+            margin: 25px auto;
+            background-color: white;
+            border: 1px solid #6b3e26;
+            border-radius: 5px;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .about h1 {
+            color: #4b2412;
+            text-decoration: underline;
+        }
+
+        .about img {
+            width: 800px;
+            height: 180px;
+            object-fit: cover;
+            margin: 10px;
+        }
+
+        .about p {
+            color: #3d1c0e;
+            font-size: 15px;
+            line-height: 1.6;
+            font-weight: bold;
+        }
+        .video {
+            text-align: center;
+            margin: 25px;
+        }
+
+        .video iframe {
+            width: 400px;
+            height: 225px;
+        }
+        footer {
+            background-color: #4b2412;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        @media screen and (max-width: 600px) {
+
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav a {
+                margin: 8px;
+            }
+
+            .about {
+                width: 85%;
+            }
+
+            .about img {
+                width: 90%;
+                height: 180px;
+            }
+
+            .video iframe {
+                width: 90%;
+                height: 200px;
+            }
+
+            body {
+                background-color: #f5e6d3;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav>
+
+        <div class="logo">
+            <img src="https://png.pngtree.com/png-clipart/20250602/original/pngtree-rustic-cafe-logo-with-coffee-beans-and-wheat-icons-png-image_21110596.png"
+                 alt="CafeEat Logo">
+        </div>
+
+        <div>
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+        </div>
+
+    </nav>
+
+    <section class="about">
+
+        <h1>ABOUT CAFE EAT</h1>
+
+        <img src="https://wallpapercave.com/wp/wp1874184.jpg"
+             alt="CafeEat">
+
+        <p>
+            CafeEat is a cozy and welcoming cafe where great food,
+            freshly brewed coffee and a relaxing atmosphere come together.
+            We serve a variety of delicious beverages, snacks, desserts
+            and meals prepared with fresh ingredients.
+        </p>
+
+        <p>
+            Our aim is to give every customer a wonderful dining experience.
+            Whether you are enjoying coffee with friends, having a quick meal,
+            or spending time with family, CafeEat is the perfect place to
+            relax, enjoy delicious food and create happy memories.
+        </p>
+
+    </section>
+
+    <div class="video">
+
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/s9A4NiExKO0?si=2pc0-tMVEjW_WC--" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    </div>
+
+    <footer>
+        © 2026 CafeEat | All Rights Reserved
+    </footer>
+
+</body>
+</html>

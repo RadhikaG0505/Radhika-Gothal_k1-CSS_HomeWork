@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CafeEat</title>
+
+    <style>
+        body {
+            margin: 0;
+            background-color: #f5e6d3;
+        }
+        nav {
+            background-color: #4b2412;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+         .logo {
+    width: 80px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    }
+
+    .logo img {
+    width: 75px;
+    height: 60px;
+    object-fit: contain;
+    }
+
+        .banner {
+            margin: 25px auto;
+            width: 90%;
+            height: 400px;
+            background-image: url("https://static.vecteezy.com/system/resources/thumbnails/043/166/071/small_2x/ai-generated-classic-cafe-setting-with-warm-atmosphere-generative-ai-photo.jpeg");
+            background-size: cover;
+            background-position: center;
+            border: 1px solid #6b3e26;
+        }
+        .products {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .products h2 {
+            color: #4b2412;
+            text-decoration: underline;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .card {
+            width: 30%;
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px gray;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            color: #6b3e26;
+        }
+
+        .card p {
+            font-size: 14px;
+        }
+
+        .card button {
+            background-color: #6b3e26;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .card button:hover {
+            background-color: #3d1c0e;
+        }
+        footer {
+            background-color: #4b2412;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        @media screen and (max-width: 600px) {
+
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav a {
+                margin: 8px;
+            }
+
+            .banner {
+                width: 95%;
+                height: 220px;
+            }
+
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 90%;
+            }
+
+            body {
+                background-color: #ffe0b2;
+            }
+        }
+        @media screen and (orientation: landscape) and (max-width: 800px) {
+
+            .banner {
+                height: 200px;
+            }
+
+            .cards {
+                flex-wrap: wrap;
+            }
+
+            .card {
+                width: 45%;
+            }
+        }
+        @media (prefers-color-scheme: dark) {
+
+            body {
+                background-color: #222;
+                color: white;
+            }
+
+            .products h2 {
+                color: #ffd27f;
+            }
+
+            .card {
+                background-color: #333;
+                color: white;
+            }
+
+            .card h3 {
+                color: #ffd27f;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <nav>
+
+        <div class="logo">
+            <img src="https://png.pngtree.com/png-clipart/20250602/original/pngtree-rustic-cafe-logo-with-coffee-beans-and-wheat-icons-png-image_21110596.png" alt="">
+        </div>
+
+        <div>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Menu</a>
+            <a href="#">Contact</a>
+            <a href="#">Login</a>
+        </div>
+
+    </nav>
+
+    <div class="banner"></div>
+    <section class="products">
+        <h2>Our Specials!</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="https://monpetitcafe.fr/wp-content/uploads/2026/01/recette_cappuccino_parfait_2605.jpg">
+                <h3>Cappuccino</h3>
+                <p>
+                    Freshly brewed coffee with
+                    smooth milk and rich foam.
+                </p>
+                <button>Order Now</button>
+            </div>
+            <div class="card">
+                <img src="https://thumbs.dreamstime.com/b/delicious-cheeseburger-lettuce-tomato-rustic-wooden-table-cozy-cafe-image-generated-using-ai-397814051.jpg?w=992">
+                <h3>Cheese Burger</h3>
+                <p>
+                    Delicious burger prepared with
+                    fresh vegetables and cheese.
+                </p>
+                <button>Order Now</button>
+            </div>
+            <div class="card">
+                <img src="https://img.freepik.com/premium-photo/delectable-layered-chocolate-cake-plate-with-blurred-cafe-background_862489-6358.jpg">
+                <h3>Chocolate Cake</h3>
+                <p>
+                    Soft and delicious chocolate cake
+                    perfect for every occasion.
+                </p>
+                <button>Order Now</button>
+
+            </div>
+
+        </div>
+
+    </section>
+    <footer>
+        © 2026 CafeEat | All Rights Reserved
+    </footer>
+
+</body>
+</html>

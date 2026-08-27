@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            min-height: 700px;
+            background-image: url("https://static.vecteezy.com/system/resources/previews/056/163/857/non_2x/modern-cafe-interior-design-featuring-yellow-and-grey-furniture-plants-and-large-windows-photo.jpg");
+            background-size: cover;
+             background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .login-container {
+            position: relative;
+            width: 360px;
+            padding: 35px;
+            margin-top: 150px;
+            background-color: rgba(165, 204, 241, 0.94);
+            border: 2px solid #5b7c99;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            text-align: center;
+        }
+        h1 {
+            margin: 0 0 8px;
+            font-family: Georgia, serif;
+            font-size: 32px;
+            color: #315878;
+            text-transform: uppercase;
+        }
+        label {
+            display: block;
+            margin: 15px 0 6px;
+            text-align: left;
+            font-size: 15px;
+            font-weight: bold;
+            color: #34495e;
+        }
+        input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #9bb7cc;
+            border-radius: 6px;
+            font-size: 14px;
+            color: #333;
+            outline: none;
+        }
+        .login-btn {
+            position: relative;
+            width: 100%;
+            margin-top: 25px;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            background-color: #315878;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        @media (max-width: 600px) {
+            body {
+                background-image: url("https://static.vecteezy.com/system/resources/thumbnails/021/701/769/small_2x/wooden-table-top-in-cafe-blurred-bokeh-background-ai-generated-image-photo.jpg");
+                padding: 15px;
+            }
+            .login-container {
+                width: 90%;
+                padding: 25px;
+                border-radius: 8px;
+            }
+            h1 {
+                font-size: 26px;
+            }
+            input {
+                padding: 10px;
+            }
+            .login-btn {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form>
+            <label for="username">Username</label>
+            <input 
+                type="text" 
+                id="username" 
+                placeholder="Enter your username"
+            >
+            <label for="password">Password</label>
+            <input 
+                type="password" 
+                id="password" 
+                placeholder="Enter your password"
+            >
+            <button type="submit" class="login-btn">
+                Submit
+            </button>
+        </form>
+
+    </div>
+
+</body>
+</html>

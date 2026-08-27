@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Daily News</title>
+
+    <style>
+        
+        body {
+            margin: 0;
+            background-image: url("https://images.unsplash.com/photo-1504711434969-e33886168f5c");
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            color: black;
+        }
+        header {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+         nav{
+            background-color: rgb(54, 53, 53);
+            padding:20px;
+            display:flex;
+            justify-content: space-evenly;
+        }
+        a{
+            color:white;
+            text-decoration: none;
+        }
+        .container {
+            width: 850px;
+            max-width: 90%;
+            margin: 20px auto;
+        }
+        .main-news {
+            position: relative;
+            height: 290px;
+
+            background-image:
+                linear-gradient(
+                    rgba(0, 0, 0, 0.1),
+                    rgba(0, 0, 0, 0.7)
+                ),
+                url("https://images.unsplash.com/photo-1585829365295-ab7cd400c167");
+
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            padding: 25px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        .breaking {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background-color: rgb(148, 187, 232);
+            color: rgb(15, 1, 1);
+            padding: 7px 12px;
+            font-size: 12px;
+            font-weight: bold;
+            border-radius: 3px;
+        }
+        .main-news h2 {
+            font-size: 30px;
+            margin: 0 0 10px;
+            text-shadow: 2px 2px 4px black;
+        }
+        .main-news p {
+            font-size: 14px;
+            margin: 0;
+            text-shadow: 1px 1px 3px black;
+        }
+        .news-cards {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .card {
+            flex: 1;
+            background-color: rgb(169, 220, 240);
+            border-radius: 5px;
+            box-shadow: 0 3px 8px #555;
+        }
+        .card img {
+            width: 100%;
+            height: 130px;
+            object-fit: cover;
+            display: block;
+        }
+        .card-content {
+            padding: 12px;
+        }
+        .card h3 {
+            margin: 0 0 8px;
+            color: rgb(109, 32, 109);
+            font-size: 17px;
+        }
+        .card p {
+            margin: 0 0 10px;
+            font-size: 12px;
+        }
+        .date {
+            color: darkblue;
+            font-size: 10px;
+            font-weight: bold;
+        }
+        @media (max-width: 800px) {
+            .container {
+                width: 90%;
+            }
+            .news-cards {
+                flex-wrap: wrap;
+            }
+            .card {
+                flex: 45%;
+            }
+        }
+
+
+        @media (max-width: 500px) {
+            nav {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+            .main-news {
+                height: 300px;
+            }
+            .main-news h2 {
+                font-size: 22px;
+            }
+            .news-cards {
+                flex-direction: column;
+            }
+            .card {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <h1>DAILY NEWS</h1>
+    </header>
+    <nav>
+   <a href="">Home</a> 
+   <a href="">Politics</a>
+   <a href="">Technology</a>
+   <a href="">Sports</a>
+   <a href="">Business</a>
+   </nav>
+
+    <div class="container">
+        <div class="main-news">
+
+            <div class="breaking">
+                BREAKING NEWS
+            </div>
+
+            <h2>
+                News That Keeps the World Informed
+            </h2>
+
+            <p>
+                Stay updated with important stories, events, and headlines from around the world.
+            </p>
+        </div>
+
+        <div class="news-cards">
+            <div class="card">
+                <img
+                    src="https://img.freepik.com/premium-photo/power-politics-background_87720-94929.jpg"
+                    alt=""
+                >
+                <div class="card-content">
+                    <h3>
+                        Political Leader Addresses a Large Gathering
+                    </h3>
+                    <p>
+                       A political leader is seen addressing a large crowd during a public event, with people gathered to listen to the speech.
+                    </p>
+                    <div class="date">
+                        August 24, 2026
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <img
+                    src="https://img.freepik.com/premium-photo/olympic-games-sports-background-with-copy-space-text_916191-34919.jpg?w=2000"
+                    alt=""
+                >
+
+                <div class="card-content">
+
+                    <h3>
+                        Athletes Ready for an Exciting Competition
+                    </h3>
+
+                    <p>
+                        A group of athletes is shown running together in a colorful sports-themed scene, representing energy, teamwork, and competition.
+                    </p>
+
+                    <div class="date">
+                        August 24, 2026
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="card">
+
+                <img
+                    src="https://img.freepik.com/premium-photo/artificial-intelligence-new-technology-background_593190-417.jpg?w=2000"
+                    alt="technology"
+                >
+
+                <div class="card-content">
+
+                    <h3>
+                        Artificial Intelligence and Future Technology
+                    </h3>
+
+                    <p>
+                       An advanced AI robot is displayed with futuristic digital graphics, representing the growing role of artificial intelligence and modern technology.
+                    </p>
+
+                    <div class="date">
+                        August 26, 2026
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

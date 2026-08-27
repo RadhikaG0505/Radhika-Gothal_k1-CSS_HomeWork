@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CafeEat - Contact Us</title>
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background-color: #f5e6d3;
+        }
+
+        nav {
+            background-color: #4b2412;
+            padding: 12px 8%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+
+        .logo {
+            width: 70px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+        }
+
+
+        .logo img {
+            width: 65px;
+            height: 55px;
+            object-fit: contain;
+        }
+
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            color: #f5d7b5;
+            text-decoration: underline;
+        }
+
+
+
+        .contact-container {
+            width: 85%;
+            margin: 25px auto;
+            background-color: white;
+            border: 1px solid #6b3e26;
+            border-radius: 6px;
+            padding: 30px;
+            box-sizing: border-box;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(75, 36, 18, 0.25);
+        }
+
+        h1 {
+            color: #4b2412;
+            text-decoration: underline;
+            margin-bottom: 25px;
+        }
+        .contact-info {
+            margin-bottom: 25px;
+        }
+        .contact-info h2 {
+            color: #6b3e26;
+            font-size: 20px;
+        }
+
+        .contact-info p {
+            margin: 8px;
+            font-size: 15px;
+        }
+
+        table {
+            margin: 15px auto 25px;
+            border-collapse: collapse;
+        }
+        th,
+        td {
+            border: 1px solid #6b3e26;
+            padding: 10px 25px;
+        }
+        th {
+            background-color: #6b3e26;
+            color: white;
+        }
+
+        td {
+            background-color: #f5e6d3;
+        }
+        .query-title {
+            color: #4b2412;
+            text-decoration: underline;
+            margin-bottom: 15px;
+        }
+        .query-form {
+            width: 350px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #6b3e26;
+            border-radius: 8px;
+            box-shadow: 0 3px 8px gray;
+            text-align: left;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+            color: #4b2412;
+        }
+        input,
+        textarea {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 9px;
+            border: 1px solid #9b6a4b;
+            border-radius: 5px;
+            outline: none;
+            font-family: Georgia, serif;
+            transition: 0.3s;
+        }
+        input:focus,
+        textarea:focus {
+            border: 2px solid #6b3e26;
+            box-shadow: 0 0 5px rgba(107, 62, 38, 0.4);
+        }
+        textarea {
+            height: 80px;
+            resize: none;
+        }
+        .submit-btn,
+        .reset-btn {
+            border: none;
+            padding: 9px 18px;
+            margin-top: 12px;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .submit-btn {
+            background-color: #6b3e26;
+        }
+        .reset-btn {
+            background-color: #ad6110;
+        }
+        .submit-btn:hover {
+            background-color: #4b2412;
+            transform: scale(1.05);
+        }
+
+        .reset-btn:hover {
+            background-color: #555;
+            transform: scale(1.05);
+        }
+        .location {
+            margin-top: 30px;
+        }
+        .location h2 {
+            color: #4b2412;
+            text-decoration: underline;
+        }
+        .location iframe {
+            width: 350px;
+            height: 220px;
+            border: 1px solid #6b3e26;
+        }
+        footer {
+            background-color: #4b2412;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        @media screen and (max-width: 600px) {
+            nav {
+                flex-direction: column;
+
+                gap: 10px;
+            }
+            nav a {
+                margin: 7px;
+
+                font-size: 14px;
+            }
+            .contact-container {
+                width: 92%;
+
+                padding: 20px;
+            }
+
+            .query-form {
+                width: 90%;
+            }
+            table {
+                font-size: 13px;
+            }
+            th,
+            td {
+                padding: 8px;
+            }
+            .location iframe {
+                width: 90%;
+                height: 200px;
+            }
+        }
+        @media screen and (orientation: landscape)
+        and (max-width: 800px) {
+            .contact-container {
+                width: 90%;
+                padding: 20px;
+            }
+
+            .query-form {
+                width: 400px;
+            }
+        }
+        @media (prefers-color-scheme: dark) {
+
+            body {
+                background-color: #24150f;
+                color: white;
+            }
+
+            .contact-container {
+                background-color: #332018;
+                border-color: #9b6a4b;
+            }
+            h1,
+            .query-title,
+            .location h2 {
+                color: #f5d7b5;
+            }
+            .contact-info h2 {
+                color: #d8b18d;
+            }
+            .query-form {
+                border-color: #9b6a4b;
+            }
+            label {
+                color: #f5d7b5;
+            }
+            td {
+                background-color: #4b3021;
+                color: white;
+            }
+            th {
+                background-color: #8b5435;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img
+                src="https://png.pngtree.com/png-clipart/20250602/original/pngtree-rustic-cafe-logo-with-coffee-beans-and-wheat-icons-png-image_21110596.png"
+                alt="CafeEat Logo"
+            >
+        </div>
+
+        <div>
+            <a href="Q25_home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+
+        </div>
+
+    </nav>
+
+    <div class="contact-container">
+        <h1>Contact Us</h1>
+        <div class="contact-info">
+            <h2>CafeEat</h2>
+            <table>
+
+                <tr>
+                    <th>Name</th>
+                    <td>CafeEat</td>
+                </tr>
+
+                <tr>
+                    <th>Phone</th>
+                    <td>9876543210</td>
+                </tr>
+
+                <tr>
+                    <th>Address</th>
+                    <td>Mumbai, Maharashtra</td>
+                </tr>
+
+                <tr>
+                    <th>Email</th>
+                    <td>cafeeat@gmail.com</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <h2 class="query-title">
+            Query Form
+        </h2>
+        <div class="query-form">
+
+            <form>
+
+                <label for="name">
+                    Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                    required
+                >
+                <label for="email">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                >
+                <label for="query">
+                    Query
+                </label>
+                <textarea
+                    id="query"
+                    placeholder="Enter your query"
+                ></textarea>
+                <button
+                    type="submit"
+                    class="submit-btn"
+                >
+                    Submit
+                </button>
+                <button
+                    type="reset"
+                    class="reset-btn"
+                >
+                    Reset
+                </button>
+
+            </form>
+
+        </div>
+        <div class="location">
+
+            <h2>
+                Come Find Us Here!!
+            </h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30124.07191628957!2d72.8628389345053!3d19.303707496079838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b10077444c9f%3A0x9d4d4db3100fbc48!2sThe%20EatX!5e0!3m2!1sen!2sin!4v1787859552002!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+        </div>
+
+    </div>
+
+    <footer>
+        © 2026 CafeEat | All Rights Reserved
+    </footer>
+
+
+</body>
+
+</html>

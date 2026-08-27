@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+            background-color: #edf7f8;
+        }
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            height: 58px;
+            background-color: #232222;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 10px 25px;
+        }
+
+        nav a:hover {
+            color: #9ed9df;
+        }
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 480px;
+            background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .content {
+            min-height: 300px;
+            background-color: #edf7f8;
+            text-align: center;
+            padding: 45px 20px;
+        }
+
+        .content h2 {
+            color: #123f49;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 18px;
+        }
+
+        .content p {
+            max-width: 850px;
+            margin: auto;
+            color: #333333;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+        .fixed-btn {
+            position: fixed;
+            right: 25px;
+            bottom: 25px;
+            padding: 13px 25px;
+            border: none;
+            border-radius: 25px;
+            background-color: #123f49;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+        }
+
+        .fixed-btn:hover {
+            background-color: #1d5d68;
+        }
+        @media (max-width: 600px) {
+
+            nav {
+                height: 55px;
+            }
+            nav a {
+                font-size: 13px;
+                padding: 8px;
+            }
+            .hero {
+                height: 400px;
+                background-position: center;
+            }
+            .content {
+                padding: 35px 18px;
+            }
+            .content h2 {
+                font-size: 24px;
+            }
+            .content p {
+                font-size: 14px;
+            }
+            .fixed-btn {
+                right: 15px;
+                bottom: 15px;
+                padding: 11px 18px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Places</a>
+        <a href="#">Contact</a>
+        <a href="#">Services</a>
+    </nav>
+    <section class="hero"></section>
+    <section class="content">
+
+        <h2>Explore the World</h2>
+
+        <p>
+           Travelling gives us the opportunity to discover new places, meet interesting people, and experience different cultures. Every journey introduces us to something new and helps us understand the world from a different perspective. Exploring new destinations allows us to learn about local traditions, history, lifestyles, and delicious cuisines. It also gives us a chance to admire beautiful landscapes, peaceful beaches, majestic mountains, historical monuments, and exciting cities.
+
+Travelling is not only about visiting new places; it is also about creating unforgettable memories and gaining valuable experiences. Spending time with family and friends while exploring a new destination can make every trip even more special. Sometimes, travelling alone can also help us become more confident, independent, and open-minded. Each journey teaches us something and gives us stories that we can remember for years.
+
+Whether you are looking for adventure, relaxation, nature, culture, or simply a break from your daily routine, there is always a destination waiting to be explored. So, take a break from your busy life, plan your next journey, pack your bags, and begin an exciting adventure. The world is full of beautiful places, new experiences, and wonderful memories waiting for you.
+        </p>
+
+    </section>
+
+    <button class="fixed-btn">
+        Explore Now
+    </button>
+
+</body>
+</html>
+
+    
